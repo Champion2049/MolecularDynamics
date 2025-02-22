@@ -26,41 +26,23 @@ brew install gromacs  # macOS
 ```
 
 ## Usage
-### 1. Setting Up the System
-Prepare the molecular system and configure GROMACS for simulation:
-
-```bash
-gmx pdb2gmx -f 4f51.pdb -o processed.gro -water spce
-gmx grompp -f md.mdp -c processed.gro -p topol.top -o md.tpr
-gmx mdrun -deffnm md
-```
-
-### 2. Analyzing the Trajectory
+### 1. Analyzing the Trajectory
 Run the Python script to analyze the trajectory:
 
 ```bash
-python analyze_trajectory.py
+python3 trajectory.py
 ```
 
-### 3. Visualization
+### 2. Visualization
 Generate plots for analysis:
 
-```python
-import MDAnalysis as mda
-import matplotlib.pyplot as plt
-
-u = mda.Universe("md.tpr", "md.xtc")
-
-# Example: Calculate and plot RMSD
-rmsd = []
-for ts in u.trajectory:
-    rmsd.append(ts.time)
-
-plt.plot(rmsd)
-plt.xlabel("Time (ps)")
-plt.ylabel("RMSD")
-plt.show()
+```bash
+python3 viewxvg.py
+python3 rmsd.py
 ```
+
+### 3. Simulating the Trajectory
+Using PyMOL or VMD, load the md_0_1.gro file and on top of that file load md_0_1_noPBC.xtc file and click on play to run the simulation of the molecule.
 
 ## Results
 - **Trajectory of the Molecule:** Calculates the Molecules trajectory to get simulations on VMD or PyMOL
