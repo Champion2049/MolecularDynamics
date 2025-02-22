@@ -1,4 +1,4 @@
-# Molecular Dynamics Analysis of a Polymer
+# Molecular Dynamics: Analysis of a Polymer
 
 ![Molecular Dynamics](https://upload.wikimedia.org/wikipedia/commons/3/3d/Molecular_dynamics_simulation.gif)
 
