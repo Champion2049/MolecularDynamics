@@ -1,9 +1,9 @@
-# Molecular Dynamics Analysis of 4F51
+# Molecular Dynamics Analysis of a Polymer
 
 ![Molecular Dynamics](https://upload.wikimedia.org/wikipedia/commons/3/3d/Molecular_dynamics_simulation.gif)
 
 ## Overview
-This project utilizes **MDAnalysis** and **GROMACS** to perform molecular dynamics simulations and analyze the trajectory of the molecule with the **PDB ID: 4F51**. The study focuses on evaluating the molecule's properties based on its trajectory data.
+This project utilizes **MDAnalysis** and **GROMACS** to perform molecular dynamics simulations and analyze the trajectory of the molecule with the **PDB ID: 4F51** (You can use any other polymer of your choice). The study focuses on evaluating the molecule's properties based on its trajectory data.
 
 ## Features
 - **Molecular Dynamics Simulation:** Uses GROMACS to generate trajectory data.
